@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* --main-background: rgb(2,0,36); */
+    --main-background: linear-gradient(to bottom,  hsl(190, 96%, 9%),  hsl(231, 100%, 15%));
+    /* --main-background: linear-gradient(to top,  hsl(168, 96%, 9%),  hsl(167, 100%, 15%), rgb(0, 122, 146) 100%); */
+
+    
+    /* --act-color:#00a37e ; */
+    --act-color:#08363cfd ;
+    --act-color2:#006b522c ;
+
+
+
+
+    --main-text:white;
+    --highlight-color2:#00d6b4;
+    --low-opacity-txt1:rgba(255, 255, 255, 0.658);
+
+    --nav-bg:#002b2736;
+    --nav-border:#00d6b23d;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    background: var(--main-background);
+    /* background-image:url('img/rb_5459.png'); */
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.fixed-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+.fixed-img {
+    background-image: url('img/rb_5459.png');
+    background-size: 100%;
+    /* background-attachment: fixed; */
+}
+.fixed-body {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.heror {
+    height: 100vh;
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.menu-box {
+    height: 50px;
+    width: 95%;
+    display: flex;
+    background: var(--nav-bg);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-text);
+    padding: 0px 10px ;
+    border: 1px solid var(--nav-border);
+    z-index: 99999;
+} 
+.heror-body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 900;
+}
+.heror-content {
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 50px;
+}
+.heror-content h1 {
+    color: var(--main-text);
+    font-size: 50px;
+}
+.heror-content h2 {
+    color:var(--highlight-color2) ;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.heror-content p {
+    margin-bottom:20px ;
+}
+.quick-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.quick-btn .v-project {
+    padding:10px 20px;
+    background: var(--act-color) ;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.quick-btn .h-contct {
+    padding: 10px 20px ;
+    border-radius: 5px;
+}
+
+.heror-img {
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.heror-img img {
+    height: 600px;
+    filter: drop-shadow(0px 0px 80px #07d6a675);
+}
+
+
+.project-section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.project-title {
+    height: 100px;
+    width: 90%;
+    background: var(--act-color);
+    backdrop-filter: blur(5px);
+    border:1px solid var(--nav-border);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+ 
+}
+.project-title  h1 {
+    color: var(--highlight-color2);
+}
+
+.project-box {
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: var(--nav-bg);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid var(--nav-border);
+    /* overflow: hidden; */
+}
+.project-items {
+    height: 400px;
+    width: 30%;
+    background: var(--act-color2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.project-img {
+    height: 60%;
+    width: 100%;
+    background: var(--act-color);
+    overflow: hidden;
+}
+.project-img img {
+    width: 100%;
+    object-fit: contain;
+}
+.project-content {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+.project-content h1 {
+    color: var(--main-text);
+}
+.project-content p {
+    color: var(--low-opacity-txt1);
+}
+.project-content .project-skill {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.project-content .project-skill .skill-box {
+    background: var(--act-color);
+    border: 1px solid var(--nav-border);
+    padding: 5px 10px;
+    border-radius: 14px;
+    color: var(--highlight-color2);
+}
+.v-p-btn {
+    padding: 5px;
+    width: auto;
+    background: transparent;
+    color: var(--highlight-color2);
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+/* skill Section Style START  */
+.skill {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+    padding: 20px;
+}
+.skill-title {
+    height: 80px;
+    width: 90%;
+    background: var(--act-color);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid var(--nav-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--highlight-color2);
+}
+.skill-box {
+    height: auto;
+    width: 90%;
+    background: var(--nav-bg);
+    border: 1px solid var(--nav-border);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.skill-box .skill-items {
+    height: 200px;
+    width: 250px;
+    background: var(--nav-bg);
+    border: 1px solid var(--nav-border);
+    border-radius: 10px;
+    padding: 20px;
+}
+.skill-items ul {
+   list-style: none;
+}
+.skill-items ul li {
+    font-size: 20px;
+}
+.skill-items ul li img {
+    height: 20px;
+    
+}
+
+/* skill Section Style END */
+
+/* png tick mark  */
+/* https://img.icons8.com/?size=100&id=VFaz7MkjAiu0&format=png&color=000000 */
